@@ -11,6 +11,9 @@ module.exports = {
         main: "#ffb703",
         text: "#ccd6d6",
       },
+      height: {
+        heroHeight: "clac(100vh - 56px)",
+      },
     },
   },
   plugins: [],
