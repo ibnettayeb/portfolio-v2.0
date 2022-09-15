@@ -1,9 +1,10 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Hero() {
   return (
-    <div className="w-full h-[calc(100vh_-_56px)] flex items-center -mb-28">
+    <div className="w-full h-[calc(100vh_-_56px)] flex items-center ">
       <div>
         <p className="text-main">Hi, my name is</p>
         <h1 className="text-3xl sm:text-3xl font-bold font-poppins my-2">
@@ -21,6 +22,33 @@ function Hero() {
             View Work
             <HiArrowNarrowRight className="group-hover:translate-x-2 duration-300" />
           </button>
+
+          {/* Social Media */}
+          <ul className="hidden lg:flex fixed flex-col gap-5 items-center left-[10%] top-[35%] bg-main rounded-full text-[#0e1d2c] py-4 w-9 after:w-2 after:h-20 after:content-none">
+            <li className="">
+              <a className="" href="https://github.com/ibnettayeb">
+                <FaGithub size={20} />
+              </a>
+            </li>
+            <li className="">
+              <a className="" href="https://linkedin.com/ibnettayeb">
+                <FaLinkedin size={20} />
+              </a>
+            </li>
+            <li className="">
+              <a className="" href="https://instagram.com/ibnettayeb">
+                <FaInstagram size={20} />
+              </a>
+            </li>
+            <li className="">
+              <a className="" href="https://twitter.com/ibnettayeb">
+                <FaTwitter size={20} />
+              </a>
+            </li>
+            <p className="absolute -bottom-16 uppercase font-medium text-sm whitespace-nowrap text-main rotate-90">
+              Follow me
+            </p>
+          </ul>
         </div>
       </div>
     </div>
